@@ -1,0 +1,110 @@
+/* src/Timeline.css */
+
+.timeline {
+    background: linear-gradient(180deg, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 88%) 10%, rgb(255, 255, 255) 50%);
+
+    position: relative;
+    margin-bottom: 3%;
+    padding-left: 80px;
+    /* border: 1px solid black; */
+    
+}
+.timeline-heading{
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    color: #333333;
+    /* margin-top: 25px; */
+    margin-bottom: 20px;
+}
+.timeline-item {
+    display: flex;
+    opacity: 0;
+  transform: translateX(100px); 
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+   
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin-left: -2.5px;
+    margin-right: 0;
+}
+.timeline-item.animate__fadeInRight {
+    opacity: 1;
+    transform: translateX(0);
+  }
+ 
+.timeline-icon {
+    position: absolute;
+    background: #fff;
+    border: 3px solid #6c757d;
+    border-radius: 50%;
+    width: 20px;
+    margin-right: 0;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+
+.timeline-content {
+    margin-right: 0;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.timeline-title {
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    color: #333333;
+    margin-right: 0;
+}
+
+.timeline-date {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-content p{
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    color: #6c757d;
+    max-width: 100%;
+    margin-right: 0;
+}
+
+ 
+
+@media screen and (max-width: 1050px) {
+    .timeline {
+        position: relative;
+        margin-bottom: 3%;
+        padding-left: 30px;
+        /* border: 1px solid black; */
+        
+    }
+    .timeline-content {
+        margin-right: 20px;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }    
+} 

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.animate__fadeInLeft {
+    --animate-duration: 2s; 
+  }
+  
+.home-container{
+    background: linear-gradient(360deg, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 88%) 10%, rgb(255, 255, 255) 50%);
+    display: flex;
+    position: inherit;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 130px;
+}
+
+.home-container h3{
+    padding: 10px 0px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 150px;
+    transition: 0.4s ease-in-out;
+    font-family: "Poppins",sans-serif;
+    color: #444;
+}
+
+.home-container h2{
+    padding: 10px 0px;
+    font-weight: 500;
+    font-size: 45px;
+    transition: 0.4s ease-in-out;
+    font-family: "Poppins",sans-serif;
+    color: #444;
+}
+
+.home-left{
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.home-container h2:hover{
+    font-size: 47px;
+}
+
+.home-container h3:hover{
+    font-size: 32px;
+}
+
+.home-left-container{
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+
+.home-left-container span{
+    position: relative;
+    color: #7c7676;
+    font-size: 30px;
+    
+    font-family: "poppins";
+    animation: animation 10s ease infinite;
+    transition: 0.6s ease-in-out;
+}
+
+@keyframes animation{
+    0%,100% {top: 0;}
+    25% {top: -55px;}
+    50% {top: -105px;}
+    75% {top: -155px;}
+}
+
+.home-social-container{
+    margin-top: 10px;
+    display: flex;  
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: space-evenly;
+}
+
+.home-social-container li{
+    list-style: none;
+}
+
+.left-social-icon{
+    height: 30px;
+    width: auto;
+    transition: 0.4s ease-in-out;
+    list-style: none;
+}
+
+.left-social-icon:hover{
+    height: 33px;
+    width: auto;
+}
+.home-right-profile{
+    margin-top: 20%;
+    height: 410px;
+    width: auto;
+    transition: 1s ease-in-out;
+    border-radius: 100%;
+}
+
+.home-right-profile:hover{
+    height: 430px;
+    width: auto;
+}
+
+@media screen and (max-width: 1050px){
+    .home-container{
+        margin-top: auto;
+    }
+    .home-container h2{
+        font-size: 35px;
+        padding: 0;
+    }
+    
+    .home-container h2:hover{
+        font-size: 37px;
+    }
+    .home-container h3, .home-left-container span{
+        font-size: 25px;
+    } 
+    .home-container h3, .home-left-container span:hover{
+        font-size: 25px;
+    } 
+    .home-right-profile{
+        height: 450px;
+    }
+    .home-right-profile:hover{
+        height: 370px;
+    }
+    .home-social-container{
+        padding: 50px 0px;
+    }
+    .left-social-icon{
+        height: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .home-container{
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    .home-left h1:hover{
+        font-size: 35px;
+    }
+    .home-container h3{
+        margin-top: 50px;
+    }
+    .home-left p:hover, .home-skills-container span:hover{
+        font-size: 25px;
+    }
+    .home-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .home-right-profile{
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-right-profile:hover{
+        height: 350px;
+    }
+    .left-social-icon{
+        height: 25px;
+    }
+    .left-social-icon:hover{
+        height: 25px;
+    }
+    .left-buttons-container{
+        justify-content: space-evenly;
+    }
+    .left-social-icons-container{
+        padding: 0% 10%;
+        padding-top: 5%;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .home-left h1{
+        font-size: 25px;
+        letter-spacing: 3px;
+        
+    }
+    .home-left h1:hover{
+        font-size: 25px;
+    }
+    .home-left p, .home-skills-container span{
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .home-left p:hover, .home-skills-container span:hover{
+        font-size: 20px;
+    }
+   
+    .home-right-profile:hover{
+        height: 250px;
+    }
+    
+    .home-social-container{
+        padding: 0% 0%;
+    }
+    .left-social-icon{
+        height: 20px;
+    }
+    .left-social-icon:hover{
+        height: 20px;
+    }
+}
+
