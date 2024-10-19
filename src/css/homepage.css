@@ -2,6 +2,10 @@
 .animate__fadeInLeft {
     --animate-duration: 2s; 
   }
+/* 
+*{
+    overflow-x: hidden;
+} */
   
 .home-container{
     background: linear-gradient(360deg, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 88%) 10%, rgb(255, 255, 255) 50%);
@@ -10,6 +14,7 @@
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 130px;
+    overflow-x: hidden;
 }
 
 .home-container h3{
@@ -34,6 +39,7 @@
 .home-left{
     text-align: center;
     letter-spacing: 3px;
+    overflow: hidden;
 }
 
 .home-container h2:hover{
@@ -85,6 +91,7 @@
     width: auto;
     transition: 0.4s ease-in-out;
     list-style: none;
+    overflow: hidden;
 }
 
 .left-social-icon:hover{
@@ -97,11 +104,13 @@
     width: auto;
     transition: 1s ease-in-out;
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .home-right-profile:hover{
     height: 430px;
     width: auto;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1050px){

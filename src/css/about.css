@@ -141,6 +141,7 @@
 } */
 .about{
     background: linear-gradient(360deg, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 88%) 10%, rgb(255, 255, 255) 50%);
+    overflow-x: hidden;
 }
 .page-container{
     display: flex;
@@ -241,7 +242,7 @@
     flex-grow: 1;
     opacity: 0;
     margin-bottom: 2%;
-    transform: translateX(100px);
+    transform: translateX(50px);
     /* border: 1px solid black;  */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
