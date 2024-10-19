@@ -22,9 +22,9 @@ function Home() {
         </div>
 
         <div className='home-social-container'>
-        <li><a href="https://www.instagram.com/sgs_gokul/" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/instagram.png")} alt="instagram" className = "left-social-icon"></img></a></li>
-        <li><a href="https://www.linkedin.com/in/srinaths205/" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/linkedin.png")} alt="linkedin" className = "left-social-icon"></img></a></li>
-                    <li><a href="https://github.com/Srinath-205" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/github.png")} alt="github" className = "left-social-icon"></img></a></li>
+        <li><a href="https://www.instagram.com/itz__me__abhinaya_/" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/instagram.png")} alt="instagram" className = "left-social-icon"></img></a></li>
+        <li><a href="https://www.linkedin.com/in/abhinaya-shrinivasan-a2b015243/" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/linkedin.png")} alt="linkedin" className = "left-social-icon"></img></a></li>
+                    <li><a href="https://github.com/Abhinaya0122" target = "_blank" rel="noreferrer"><img src={require("../../src/Sources/github.png")} alt="github" className = "left-social-icon"></img></a></li>
         </div>
         </div>
         </div>
