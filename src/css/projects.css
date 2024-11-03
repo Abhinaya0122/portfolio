@@ -1,0 +1,47 @@
+.main-project{
+    background: linear-gradient(360deg, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 88%) 10%, rgb(255, 255, 255) 50%); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects{
+    margin: 4%;
+}
+
+.project-grid{
+    display: flex;
+    position: inherit;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 130px;
+    overflow-x: hidden;
+   
+}
+
+.project-card{
+    padding: 1%;
+    height: 300px;
+    width: 350px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Optional: scale effect on hover */
+}
+
+
+
+
+.project-title,
+.project-skills {
+    position: relative;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Background for text readability */
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+
